@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rohit Kalyan | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: #f4f6f9;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(135deg, #2563eb, #1e40af);
+      color: #fff;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.8rem;
+    }
+
+    header p {
+      margin-top: 10px;
+      font-size: 1.2rem;
+    }
+
+    nav {
+      background: #111827;
+      padding: 12px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav ul {
+      display: flex;
+      justify-content: center;
+      list-style: none;
+      flex-wrap: wrap;
+    }
+
+    nav ul li {
+      margin: 0 15px;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #60a5fa;
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    section h2 {
+      text-align: center;
+      margin-bottom: 40px;
+      font-size: 2.2rem;
+      color: #1e3a8a;
+    }
+
+    /* About */
+    .about {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+      align-items: center;
+    }
+
+    .about img {
+      width: 220px;
+      border-radius: 50%;
+      margin: auto;
+      display: block;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    }
+
+    /* Skills */
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+
+    .skill-card {
+      background: #fff;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+      text-align: center;
+      transition: 0.3s;
+    }
+
+    .skill-card:hover {
+      transform: translateY(-5px);
+    }
+
+    /* Projects */
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+    }
+
+    .project-card {
+      background: #fff;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    .project-card h3 {
+      color: #1e40af;
+      margin-bottom: 10px;
+    }
+
+    /* Contact */
+    .contact-info {
+      text-align: center;
+    }
+
+    .contact-info p {
+      margin: 10px 0;
+      font-size: 1.1rem;
+    }
+
+    form {
+      max-width: 500px;
+      margin: 30px auto 0;
+      background: #fff;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    form input, form textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 1rem;
+    }
+
+    form button {
+      background: #2563eb;
+      color: #fff;
+      border: none;
+      padding: 10px 25px;
+      font-size: 1rem;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    form button:hover {
+      background: #1e40af;
+    }
+
+    footer {
+      background: #111827;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header id="home">
+    <h1>Rohit Kalyan</h1>
+    <p>B.Tech CSE (AI & ML) | Aspiring Machine Learning Engineer</p>
+  </header>
+
+  <!-- Navigation -->
+  <nav>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- About Section -->
+  <section id="about">
+    <h2>About Me</h2>
+    <div class="about">
+      <img src="Images/img.jpeg" alt="Profile Photo">
+      <div>
+        <p>
+          I am a B.Tech student specializing in Artificial Intelligence and Machine Learning.
+          I am passionate about developing intelligent systems and solving real-world problems
+          using data-driven solutions.
+        </p>
+        <br>
+        <p>
+          I have experience in Python, machine learning algorithms, and cloud technologies.
+          I enjoy competitive programming and continuous learning.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills">
+    <h2>Technical Skills</h2>
+    <div class="skills-grid">
+      <div class="skill-card">C, C++, Java, Python</div>
+      <div class="skill-card">MySQL, MongoDB, PostgreSQL, Oracle</div>
+      <div class="skill-card">Git, GitHub, VS Code, Eclipse, IntelliJ</div>
+      <div class="skill-card">DSA & Competitive Programming</div>
+      <div class="skill-card">Machine Learning (Scikit-learn, TensorFlow, PyTorch)</div>
+      <div class="skill-card">Cloud & Deployment Basics</div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects-grid">
+
+      <div class="project-card">
+        <h3>Online Voting System</h3>
+        <p><strong>Technologies:</strong> HTML, CSS, JS, React/Angular, Node.js, Python, MySQL, Blockchain</p>
+        <p>
+          A secure online voting platform using encryption, blockchain, and authentication methods
+          such as OTP and biometrics for transparency and security.
+        </p>
+      </div>
+
+      <div class="project-card">
+        <h3>Machine Learning Internship Project</h3>
+        <p><strong>Technologies:</strong> Python, Scikit-learn, TensorFlow</p>
+        <p>
+          Developed and trained ML models for classification and prediction tasks.
+          Worked on preprocessing, feature engineering, and deployment.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <div class="contact-info">
+      <p>📍 Bihar Sharif, Nalanda, India</p>
+      <p>📞 +91 7765057909</p>
+      <p>📧 kalyanrohit393@gmail.com</p>
+      <p>🔗 LinkedIn: Rohit Kalyan</p>
+    </div>
+
+    <form id="contactForm">
+      <input type="text" id="name" placeholder="Your Name" required>
+      <input type="email" id="email" placeholder="Your Email" required>
+      <textarea id="message" rows="4" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2026 Rohit Kalyan | All Rights Reserved</p>
+  </footer>
+
+  <!-- JavaScript -->
+  <script>
+    // Smooth scroll
+    document.querySelectorAll('nav a').forEach(link => {
+      link.addEventListener('click', function(e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href'))
+          .scrollIntoView({ behavior: 'smooth' });
+      });
+    });
+
+    // Contact form handling
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+
+      const name = document.getElementById('name').value;
+      const email = document.getElementById('email').value;
+      const message = document.getElementById('message').value;
+
+      if(name && email && message) {
+        alert("Thank you, " + name + "! Your message has been sent.");
+        this.reset();
+      }
+    });
+  </script>
+
+</body>
+</html>
